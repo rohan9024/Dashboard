@@ -5,9 +5,12 @@ import Third from './Components/Third';
 function App() {
   return (
     <div className="flex">
-      <First/>
-      <Second/>
-      <Third/>
+      <First />
+      <div className='ml-10 w-[1px] h-screen bg-gray-200 drop-shadow-md' />
+
+
+      <Second />
+      <Third />
     </div>
   );
 }
