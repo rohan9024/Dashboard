@@ -2,45 +2,54 @@ import React from 'react'
 import Home from '../Assets/home.png';
 import Project from '../Assets/achievement.png';
 import Billing from '../Assets/bank.png';
-// import Team from '../Assets/group.png';
-import Members from '../Assets/user.png'
+import Influencer from '../Assets/user.png'
 import Stats from '../Assets/bar-chart.png';
 import Settings from '../Assets/gear.png';
+import Manager from '../Assets/manager.png';
 
 
 function First() {
   return (
-    <div>
-      <div className='flex justify-center mt-20 hover:cursor-pointer'>
-        <img className='w-10 h-10 mr-5' src={Home} alt="Home Icon" />
-        <h1 className='mt-3'>Home</h1>
+    <div className='flex-col mt-28'>
+
+      <div className='flex justify-center items-center ml-10 mb-72'>
+        <div className='flex-col space-y-8'>
+          <div className=''>
+            <img className='w-6 h-6 mr-5' src={Home} alt="Home Icon" />
+          </div>
+          <div className=''>
+            <img className='w-6 h-6 mr-5' src={Manager} alt="Project Icon" />
+          </div>
+          <div className=''>
+            <img className='w-6 h-6 mr-5' src={Influencer} alt="Billing Icon" />
+          </div>
+          <div className=''>
+            <img className='w-6 h-6 mr-5' src={Settings} alt="Settings Icon" />
+          </div>
+        </div>
+
+        <div className='flex-col space-y-8'>
+          <div>
+            <h1 className=''>Home</h1>
+          </div>
+          <div>
+            <h1 className=''>View Managers</h1>
+          </div>
+          <div>
+            <h1 className=''>View Influencers</h1>
+          </div>
+          <div>
+            <h1 className=''>Settings</h1>
+          </div>
+        </div>
+      </div>
+      <div className='flex-col ml-16 items-center justify-center'>
+        <div className='hover:border-blue-500 hover:border-2 hover:rounded-full transition hover:scale-125 hover:cursor-pointer hover:ease-out w-20 h-20 ml-3 mb-4'>
+          <img className='rounded-full' src="https://avatarfiles.alphacoders.com/161/thumb-161485.png" alt="morty" />
+        </div>
+        <h1 className='font-semibold text-lg'>David Warner</h1>
       </div>
 
-      <div className='flex justify-center mt-7 hover:cursor-pointer'>
-        <img className='w-10 h-10 mr-5' src={Project} alt="Project Icon" />
-        <h1 className='mt-3'>Projects</h1>
-      </div>
-
-      <div className='flex justify-center mt-7 hover:cursor-pointer'>
-        <img className='w-8 h-8 mr-5' src={Billing} alt="Billing Icon" />
-        <h1 className='mt-3'>Billings</h1>
-      </div>
-
-      <div className='flex ml-11 mt-7 hover:cursor-pointer'>
-        <img className='w-10 h-10 mr-5' src={Members} alt="Team Icon" />
-        <h1 className='mt-3'>Team Members</h1>
-      </div>
-      
-      <div className='flex justify-center mt-7 hover:cursor-pointer'>
-        <img className='w-10 h-10 mr-5' src={Stats} alt="Stats Icon" />
-        <h1 className='mt-3'>Stats</h1>
-      </div>
-
-      <div className='flex justify-center mt-7 hover:cursor-pointer'>
-        <img className='w-10 h-10 mr-5' src={Settings} alt="Settings Icon" />
-        <h1 className='mt-3'>Setings</h1>
-      </div>
-      
     </div>
   )
 }
